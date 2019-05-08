@@ -1,10 +1,20 @@
 {
   "name": "lsa",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Latent semantic analysis example written in node",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "main": "lsa.js",
+  "dependencies": {
+    "jest": "^24.7.1",
+    "lodash": "*",
+    "moment": "^2.22.2",
+    "natural": "*",
+    "normalize-for-search": "^1.2.0",
+    "underscore": "^1.8.3",
+    "string": "^3.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.15.3",
+    "eslint-config-airbnb": "^17.1.0"
   },
   "repository": {
     "type": "git",
@@ -16,15 +26,18 @@
     "nlp"
   ],
   "author": "Ian Read",
-  "license": "GPL-3.0",
-  "bugs": {
-    "url": "https://github.com/readikus/lsajs/issues"
-  },
+  "license": "BSD-3-Clause",
   "homepage": "https://github.com/readikus/lsajs#readme",
-  "dependencies": {
-    "normalize-for-search": "^1.2.0",
-    "underscore": "^1.8.3",
-    "string": "^3.3.1"
+  "scripts": {
+    "test": "jest"
   },
-  "devDependencies": {}
+  "jest": {
+    "verbose": true,
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}",
+      "!**/node_modules/**",
+      "!**/vendor/**"
+    ]
+  }
 }
