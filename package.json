@@ -8,10 +8,11 @@
     "lodash": "*",
     "mathjs": "^5.10.0",
     "moment": "^2.22.2",
-    "natural": "*",
+    "natural": "^0.6.3",
     "normalize-for-search": "^1.2.0",
     "string": "^3.3.3",
-    "underscore": "^1.8.3"
+    "underscore": "^1.8.3",
+    "word2vec": "^1.1.4"
   },
   "devDependencies": {
     "eslint": "^5.15.3",
